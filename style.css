@@ -1,0 +1,392 @@
+/* ================= RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+body {
+    background: #001b29;
+    color: #ededed;
+}
+
+/* ================= HEADER ================= */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgb(7, 18, 45);
+    padding: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar a {
+    margin-left: 30px;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #0ef;
+}
+
+#menu-icon {
+    font-size: 30px;
+    color: #fff;
+    display: none;
+    cursor: pointer;
+}
+
+/* ================= HOME ================= */
+.home {
+    min-height: 100vh;
+    padding: 100px 10% 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-content {
+    max-width: 600px;
+}
+
+.home-content h3 {
+    font-size: 32px;
+}
+
+.home-content h1 {
+    font-size: 55px;
+    margin: 10px 0;
+}
+
+.home-content p {
+    font-size: 18px;
+    margin: 15px 0 30px;
+}
+
+.home-content span {
+    color: #0ef;
+}
+
+.home-sci a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    color: #0ef;
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+.home-sci a:hover {
+    background: #0ef;
+    color: #000;
+    box-shadow: 0 0 20px #0ef;
+}
+
+.btn-box {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: #0ef;
+    color: #000;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn-box:hover {
+    box-shadow: 0 0 25px cyan;
+}
+
+/* Profile Image */
+.img-cont img {
+    width: 260px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan;
+}
+
+/* ================= ABOUT ================= */
+.about {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.about-text h2 {
+    font-size: 50px;
+}
+
+.about-text h2 span {
+    color: #0ef;
+}
+
+.about-text h3 {
+    font-size: 28px;
+    margin: 20px 0;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* ================= SKILLS ================= */
+.skills {
+    padding: 80px 10%;
+}
+
+.heading1 {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+.heading1 span {
+    color: #0ef;
+}
+
+.bar {
+    margin-bottom: 25px;
+}
+
+.bar span {
+    font-size: 16px;
+}
+
+.progress-line {
+    width: 100%;
+    height: 6px;
+    background: #000;
+    border-radius: 10px;
+    margin-top: 8px;
+}
+
+.progress-line span {
+    display: block;
+    height: 100%;
+    background: #0ef;
+    border-radius: 10px;
+    position: relative;
+}
+
+/* Skill Levels */
+.progress-line.html span { width: 90%; }
+.progress-line.css span { width: 75%; }
+.progress-line.javascript span { width: 65%; }
+.progress-line.react span { width: 60%; }
+
+/* ================= EDUCATION ================= */
+.education {
+    padding: 80px 10%;
+}
+
+.heading {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+.heading span {
+    color: #0ef;
+}
+
+.box-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.box {
+    background: #051120;
+    padding: 25px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.box:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 15px cyan;
+}
+
+.box h3 {
+    color: #0ef;
+    font-size: 24px;
+}
+
+.box p {
+    margin: 10px 0;
+}
+
+/* ================= PROJECTS ================= */
+.projects {
+    padding: 80px 10%;
+}
+
+.pro {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.projects .container {
+    background: #051120;
+    padding: 25px;
+    border-radius: 10px;
+    width: 45%;
+    transition: 0.3s;
+}
+
+.projects .container:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 15px cyan;
+}
+
+.projects a {
+    color: #0ef;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* ================= CONTACT ================= */
+.contact {
+    padding: 80px 10%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.contact-text h2 {
+    font-size: 45px;
+}
+
+.contact-text span {
+    color: #0ef;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border: none;
+}
+
+.send {
+    background: #0ef;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.send:hover {
+    box-shadow: 0 0 20px cyan;
+}
+
+/* ================= FOOTER ================= */
+.last-text {
+    text-align: center;
+    padding: 20px;
+    background: rgb(7, 18, 45);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: rgb(7, 18, 45);
+        display: none;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .navbar a {
+        margin: 15px 0;
+    }
+
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .img-cont {
+        margin-top: 30px;
+    }
+
+    .projects .container {
+        width: 100%;
+    }
+
+    .contact {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* ===== MOBILE MENU FIX ===== */
+@media (max-width: 768px) {
+
+    #menu-icon {
+        display: block;
+        z-index: 101;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgb(7, 18, 45);
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        z-index: 100;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .navbar a {
+        margin: 15px 0;
+        font-size: 18px;
+    }
+}
